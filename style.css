@@ -312,7 +312,26 @@ body {
     color: #999;
     font-size: 12px;
 }
+/* Flexible container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+/* Stack columns on mobile */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+}
 .btn:hover {
     transform: translateY(3px);  /* ← опускається на 3px */
     transition: transform 0.2s ease;
+
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
