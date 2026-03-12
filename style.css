@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.greenbox {
+    width: 33.9%;
+    background-color: #394508;
+    box-sizing: border-box;
+      flex-direction: column;
+    height: 100vh;        /* ← full height */
+    position: sticky; 
+}
+
+.heads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;          /* ← makes Etran white */
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.logo-img {
+    height: 28px;   /* adjust this until it looks right */
+    width: auto;
+    margin-left: 40px;
+
+}
+
+.btn {
+    padding:   11px 14px;
+    color: #000000;           /* ← makes text white */
+    text-decoration: none; /* ← removes blue underline */
+    font-size: 11px;
+    border-radius: 2px;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #D2FD9C;
+    margin-right: 55px;
+     transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.whitebox {
+    flex: 1;
+    background-color: #fff;
+    overflow-y: auto;  /* ← білий скролиться */
+    scroll-behavior: smooth;
+
+}
+    .greenboxtext {
+    margin-top: 49px; 
+}
+
+.h1text {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    color: #fff;
+    margin-left: 40px;
+}
+.greentext {
+    color: #D2FD9C;
+}
+.greytext {
+    color: #CBCBCB;
+    margin-left: 40px;
+}
+.cards {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 16px; 
+    margin-left: 25px;
+}
+
+.card {
+    text-decoration: none;  /* ← removes underline */
+    cursor: pointer;
+    flex: 1;
+    background-color: #619111; 
+    border-radius: 4px;
+    text-align: center;
+    padding: 24px 16px;
+    max-width: 90px;
+}
+.card img {
+    width: 28px;
+    height: 28px;
+}
+
+.card p {
+    color: #000000;
+    font-size: 12px;
+    margin-top: 14px;
+}
+.card:hover {
+    background-color:#D2FD9C;
+}
+.offeringlabel {
+    color: #D2FD9C;
+    margin-left: 40px;
+}
+.sidebar-footer {
+    display: flex;
+    gap: 16px;
+    margin-top: 49px;     /* ← pushes footer to bottom */
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+.sidebar-footer a {
+    color: #D2FD9C;
+    text-decoration: none;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.sidebar-footer a:hover {
+    text-decoration: underline;
+}
+.headimg {
+    width: 93%;
+    margin: 40px auto;
+    display: block;
+    border-radius: 12px;
+
+}
+.headtxt {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.h1prod {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "IBM Plex Sans" , sans-serif;
+    text-align: center;
+}
+.productivitytext {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: -50px;
+}
+.bento {
+    width: 70%;
+    margin: 40px auto;
+    display: block;
+}
+.rlbapp {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "IBM Plex Sans" , sans-serif;
+    text-align: center;
+}
+.section {
+    width: 85%;
+    margin: 40px auto;
+    display: block;
+}
+.niger{
+    
+    width: 90%;
+    margin: 40px auto;
+    display: block;
+}
+.techtext {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: "IBM Plex Sans" , sans-serif;
+}
+.techtext2{
+      font-family: "IBM Plex Sans", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: -40px;
+}
+.techcards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.techcard {
+    background-color: #394508;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.techcard:hover {
+    transform: translateY(-8px);
+}
+
+.techcard img {
+    width: 80px;
+    height: 80px;
+}
+
+.techcard p {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 12px;
+}
+.Downloadimg {
+    width: 85%;
+    margin: 40px auto;
+    display: block;
+}
+.downtext{
+    position: absolute;
+    bottom: 70px;
+    left: 90px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;  /* ← прибрати дефолтний margin */
+}
+.Download {
+    position: relative;  /* ← обов'язково */
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+.btndown {
+    position: absolute;
+    bottom: 20px;
+    left: 90px;
+    font-weight: 300;
+    margin: 0;  /* ← прибрати дефолтний margin */
+    color: #000000;           /* ← makes text white */
+    text-decoration: none; /* ← removes blue underline */
+    font-size: 11px;
+    border-radius: 4px;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #D2FD9C;
+    padding: 10px 14px;
+}
+.mainfooter {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 40px;
+}
+
+.footer-brand {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-start
+}
+
+.footer-label {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 8px;
+    margin-right: 70px;
+}
+
+.footer-right a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-links {
+    margin-top: 20px;
+}
+
+.footer-bottom-links a {
+    color: #999;
+    font-size: 12px;
+}
+.btn:hover {
+    transform: translateY(3px);  /* ← опускається на 3px */
+    transition: transform 0.2s ease;
+}
